@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Дымоход</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <div class="header__top-inner">
+          <button class="header__burger">
+            <span class="header__burger-item">1</span>
+            <span class="header__burger-item">2</span>
+            <span class="header__burger-item">3</span>
+          </button>
+          <a class="header__phone-section" href="tel:+79635435166">
+            <div class="header__phone-icon">
+              <svg>
+                <use xlink:href="img/sprite.svg#phone"></use>
+              </svg>
+            </div>
+            <span class="header__phone-text">+7 (963) 543-51-66</span>
+          </a>
+          <a class="header__callback-btn" data-fancybox data-src="#callback-section" href="javascript:;">
+            ЗАКАЗАТЬ ЗВОНОК
+          </a>
+          <div class="logo">
+            <a class="logo__link" href="#home">
+              <img class="logo__img" src="img/logo.png" alt="">
+            </a>
+          </div>
+          <form class="header__search-form" action="">
+            <button class="header__search-icon" type="button">
+              <svg>
+                <use xlink:href="img/sprite.svg#search"></use>
+              </svg>
+            </button>
+            <div class="header__search-text">ПОИСК</div>
+            <input class="header__search-inp" type="text" autocomplete="off" name="search" placeholder="Искать...">
+          </form>
+          <button class="header__burger-menu">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <nav class="menu">
+      <div class="container">
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#producs">Продукция</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#news">новости</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#company">компания</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#about">о нас</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#contacts">контакты</a>
+          </li>
+          <button class="header__close-menu-btn">
+            <span>1</span>
+            <span>2</span>
+          </button>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div style="display: none;" id="callback-section">
+    <h3 class="callback-section__title title">Закажите звонок сейчас!</h3>
+    <form class="callback-section__form">
+      <div class="callback-section__inp-wrapper">
+        <input class="callback-section__inp" type="text" autocomplete="off" placeholder="Ваше имя" name="name">
+        <div class="callback-section__inp-icon">
+          <svg>
+            <use xlink:href="img/sprite.svg#modal-user"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="callback-section__inp-wrapper">
+        <input class="callback-section__inp" type="tel" autocomplete="off" placeholder="Ваш телефон" name="phone">
+        <div class="callback-section__inp-icon">
+          <svg>
+            <use xlink:href="img/sprite.svg#modal-phone"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="callback-section__inp-wrapper">
+        <input class="callback-section__inp" type="text" autocomplete="off" placeholder="Ваша почта" name="email">
+        <div class="callback-section__inp-icon">
+          <svg>
+            <use xlink:href="img/sprite.svg#modal-at"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="callback-section__textarea-wrapper">
+        <textarea class="callback-section__textarea" autocomplete="off" placeholder="Сообщение" name="message"></textarea>
+        <div class="callback-section__inp-icon">
+          <svg>
+            <use xlink:href="img/sprite.svg#modal-message"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="callback-section__btn-wrapper">
+        <button class="callback-section__btn btn--white" type="submit">Отправить</button>
+      </div>
+    </form>
+  </div>
+  <div class="products__modal">
+    <div class="products__modal-section">
+      <button class="products__modal-close-btn">
+        <span>1</span>
+        <span>2</span>
+      </button>
+      <div class="products__modal-item-wrapper">
+        <div class="products__modal-item">
+          <div class="products__modal-item-inner">
+            <div class="products__modal-content">
+              <h4 class="products__modal-title">
+                Мачтовые трубы
+              </h4>
+              <div class="products__modal-cost">
+                <div class="products__modal-currency">&#8381;</div>
+                <div class="products__modal-price">от 150 000 рублей</div>
+              </div>
+              <a class="products__modal-btn btn--blue" href="#">Подробнее</a>
+            </div>
+            <div class="products__modal-photo">
+              <img class="products__modal-img" src="img/product-1.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="products__modal-item-wrapper">
+        <div class="products__modal-item">
+          <div class="products__modal-item-inner">
+            <div class="products__modal-content">
+              <h4 class="products__modal-title">
+                Дымовая труба колонного типа
+              </h4>
+              <div class="products__modal-cost">
+                <div class="products__modal-currency">&#8381;</div>
+                <div class="products__modal-price">от 280 000 рублей</div>
+              </div>
+              <a class="products__modal-btn btn--blue" href="#">Подробнее</a>
+            </div>
+            <div class="products__modal-photo">
+              <img class="products__modal-img" src="img/product-2.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="products__modal-item-wrapper">
+        <div class="products__modal-item">
+          <div class="products__modal-item-inner">
+            <div class="products__modal-content">
+              <h4 class="products__modal-title">
+                Фасадная дымовая труба
+              </h4>
+              <div class="products__modal-cost">
+                <div class="products__modal-currency">&#8381;</div>
+                <div class="products__modal-price">от 280 000 рублей</div>
+              </div>
+              <a class="products__modal-btn btn--blue" href="#">Подробнее</a>
+            </div>
+            <div class="products__modal-photo">
+              <img class="products__modal-img" src="img/product-3.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="products__modal-item-wrapper">
+        <div class="products__modal-item">
+          <div class="products__modal-item-inner">
+            <div class="products__modal-content">
+              <h4 class="products__modal-title">
+                Дымовая труба на растяжках
+              </h4>
+              <div class="products__modal-cost">
+                <div class="products__modal-currency">&#8381;</div>
+                <div class="products__modal-price">от 280 000 рублей</div>
+              </div>
+              <a class="products__modal-btn btn--blue" href="#">Подробнее</a>
+            </div>
+            <div class="products__modal-photo">
+              <img class="products__modal-img" src="img/product-4.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="products__modal-item-wrapper">
+        <div class="products__modal-item">
+          <div class="products__modal-item-inner">
+            <div class="products__modal-content">
+              <h4 class="products__modal-title">
+                Дымовая труба на растяжках
+              </h4>
+              <div class="products__modal-cost">
+                <div class="products__modal-currency">&#8381;</div>
+                <div class="products__modal-price">от 280 000 рублей</div>
+              </div>
+              <a class="products__modal-btn btn--blue" href="#">Подробнее</a>
+            </div>
+            <div class="products__modal-photo">
+              <img class="products__modal-img" src="img/product-5.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="intro" style="background-image: url(img/main-bg.jpg);">
+    <div class="intro__content-wrapper">
+      <div class="container">
+        <div class="intro__inner">
+          <h1 class="intro__title">
+            Производство и монтаж промышленных дымовых труб
+          </h1>
+          <p class="intro__text">
+            Мы дорожим своим именем и репутацией, поэтому стремимся обеспечить наших клиентов качественной продукцией в оговоренные сроки по самым оптимальным ценам.
+          </p>
+          <a class="into__btn btn--white" href="#">Сотрудничать!</a>
+        </div>
+      </div>
+      <a class="intro__arrow-btn" href="#">
+        <svg>
+          <use xlink:href="img/sprite.svg#double-arrow"></use>
+        </svg>
+      </a>
+    </div>
+  </section>
+  <section class="products" id="producs">
+    <div class="container">
+      <h3 class="products__title title">Наша продукция</h3>
+      <div class="products__slider">
+        <div class="products__slider-item-wrapper">
+          <div class="products__slider-item">
+            <div class="products__item-inner">
+              <div class="products__item-content">
+                <h4 class="products__item-title">Мачтовые трубы</h4>
+                <div class="products__item-cost">
+                  <div class="products__cost-currency">&#8381;</div>
+                  <div class="products__cost-text">от 150 000 рублей</div>
+                </div>
+                <a class="products__item-btn btn--blue" href="#">Подробнее</a>
+              </div>
+              <div class="products__item-photo">
+                <img class="products__item-img" src="img/product-1.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="products__slider-item-wrapper">
+          <div class="products__slider-item">
+            <div class="products__item-inner">
+              <div class="products__item-content">
+                <h4 class="products__item-title">Дымовая труба колонного типа</h4>
+                <div class="products__item-cost">
+                  <div class="products__cost-currency">&#8381;</div>
+                  <div class="products__cost-text">от 280 000 рублей</div>
+                </div>
+                <a class="products__item-btn btn--blue" href="#">Подробнее</a>
+              </div>
+              <div class="products__item-photo">
+                <img class="products__item-img" src="img/product-2.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="products__slider-item-wrapper">
+          <div class="products__slider-item">
+            <div class="products__item-inner">
+              <div class="products__item-content">
+                <h4 class="products__item-title">Фасадная дымовая труба</h4>
+                <div class="products__item-cost">
+                  <div class="products__cost-currency">&#8381;</div>
+                  <div class="products__cost-text">от 280 000 рублей</div>
+                </div>
+                <a class="products__item-btn btn--blue" href="#">Подробнее</a>
+              </div>
+              <div class="products__item-photo">
+                <img class="products__item-img" src="img/product-3.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="products__slider-item-wrapper">
+          <div class="products__slider-item">
+            <div class="products__item-inner">
+              <div class="products__item-content">
+                <h4 class="products__item-title">Дымовая труба на растяжках</h4>
+                <div class="products__item-cost">
+                  <div class="products__cost-currency">&#8381;</div>
+                  <div class="products__cost-text">от 280 000 рублей</div>
+                </div>
+                <a class="products__item-btn btn--blue" href="#">Подробнее</a>
+              </div>
+              <div class="products__item-photo">
+                <img class="products__item-img" src="img/product-4.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="products__slider-item-wrapper">
+          <div class="products__slider-item">
+            <div class="products__item-inner">
+              <div class="products__item-content">
+                <h4 class="products__item-title">Дымовая труба на растяжках</h4>
+                <div class="products__item-cost">
+                  <div class="products__cost-currency">&#8381;</div>
+                  <div class="products__cost-text">от 280 000 рублей</div>
+                </div>
+                <a class="products__item-btn btn--blue" href="#">Подробнее</a>
+              </div>
+              <div class="products__item-photo">
+                <img class="products__item-img" src="img/product-5.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="benefits" style="background-image: url(img/benefits-bg.jpg);">
+    <div class="benefits__wrapper">
+      <h3 class="benefits__title title">Чем мы лучше остальных</h3>
+      <div class="container">
+        <div class="benefits__inner">
+          <div class="benefits__item">
+            <div class="benefits__icon">
+              <svg>
+                <use xlink:href="img/sprite.svg#benefits-1"></use>
+              </svg>
+            </div>
+            <p class="benefits__text">Круглосуточное производство</p>
+          </div>
+          <div class="benefits__item">
+            <div class="benefits__icon">
+              <svg>
+                <use xlink:href="img/sprite.svg#benefits-2"></use>
+              </svg>
+            </div>
+            <p class="benefits__text">Сертификаты ISO 9001 ГОСТ и СРО</p>
+          </div>
+          <div class="benefits__item">
+            <div class="benefits__icon">
+              <svg>
+                <use xlink:href="img/sprite.svg#benefits-3"></use>
+              </svg>
+            </div>
+            <p class="benefits__text">Монтаж и шеф-монтаж</p>
+          </div>
+          <div class="benefits__item">
+            <div class="benefits__icon">
+              <svg>
+                <use xlink:href="img/sprite.svg#benefits-4"></use>
+              </svg>
+            </div>
+            <p class="benefits__text">15 лет гарантии на дымоходы</p>
+          </div>
+          <div class="benefits__item">
+            <div class="benefits__icon">
+              <svg>
+                <use xlink:href="img/sprite.svg#benefits-5"></use>
+              </svg>
+            </div>
+            <p class="benefits__text">Диаметры труб от 100 до 1500 мм</p>
+          </div>
+          <div class="benefits__item">
+            <div class="benefits__icon">
+              <svg>
+                <use xlink:href="img/sprite.svg#benefits-6"></use>
+              </svg>
+            </div>
+            <p class="benefits__text">Индивидуальные решения</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="news" id="news">
+    <h3 class="news__title title">Последние новости</h3>
+    <div class="container">
+      <div class="news__inner">
+        <div class="news__item">
+          <div class="news__item-inner">
+            <a class="news__item-photo" href="#">
+              <img class="news__item-img" src="img/news-1.jpg" alt="">
+            </a>
+            <a class="news__item-title-link" href="#">
+              <h4 class="news__item-title">Система дымоудаления для котельной 12 МВТ</h4>
+            </a>
+            <p class="news__item-text">Завод «ВЕНТРАУФ» изготовил систему дымоудаления для газовой водогрейной котельной 12 МВТ</p>
+          </div>
+        </div>
+        <div class="news__item">
+          <div class="news__item-inner">
+            <a class="news__item-photo" href="#">
+              <img class="news__item-img" src="img/news-2.jpg" alt="">
+            </a>
+            <a class="news__item-title-link" href="#">
+              <h4 class="news__item-title">Система дымоудаления для водогрейной котельной</h4>
+            </a>
+            <p class="news__item-text">Завод «ВЕНТРАУФ» изготовил систему дымоудаления для газовой водогрейной котельной установленной...</p>
+          </div>
+        </div>
+        <div class="news__item">
+          <div class="news__item-inner">
+            <a class="news__item-photo" href="#">
+              <img class="news__item-img" src="img/news-3.jpg" alt="">
+            </a>
+            <a class="news__item-title-link" href="#">
+              <h4 class="news__item-title">Система дымоудаления для Администрации</h4>
+            </a>
+            <p class="news__item-text">Завод «ВЕНТРАУФ» изготовил, доставил и смонтировал систему дымоудаления для Технического перевооружения...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="news__btn-wrapper">
+      <a class="news__btn" href="#">Прочитать все новости</a>
+    </div>
+  </section>
+  <section class="parnters">
+    <div class="partners__bg-lines">
+      <img src="img/lines.svg" alt="">
+    </div>
+    <h3 class="partners__title title">Наши партнеры</h3>
+    <div class="container">
+      <div class="partners__inner">
+        <div class="partners__item">
+          <div class="partners__item-inner">
+            <img class="partners__item-img" src="img/partner-1.jpg" alt="">
+          </div>
+        </div>
+        <div class="partners__item">
+          <div class="partners__item-inner">
+            <img class="partners__item-img" src="img/partner-2.jpg" alt="">
+          </div>
+        </div>
+        <div class="partners__item">
+          <div class="partners__item-inner">
+            <img class="partners__item-img" src="img/partner-3.jpg" alt="">
+          </div>
+        </div>
+        <div class="partners__item">
+          <div class="partners__item-inner">
+            <img class="partners__item-img" src="img/partner-4.jpg" alt="">
+          </div>
+        </div>
+        <div class="partners__item">
+          <div class="partners__item-inner">
+            <img class="partners__item-img" src="img/partner-5.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="work" id="company">
+    <h3 class="work__title title">Наша работа — это дело нашей жизни</h3>
+    <div class="container">
+      <div class="work__country">
+        <img class="work__country-img" src="img/country.svg" alt="">
+        <div class="work__country-marker work__country-marker--tver">
+          <img class="work__country-marker-img" src="img/map-marker.svg" alt="">
+          <div class="work__country-card">
+            <div class="work__country-card-photo">
+              <img class="work__country-card-img" src="img/card-1.jpg" alt="">
+            </div>
+            <div class="work__country-card-content">
+              <h4 class="work__country-card-title">Система дымоудаления для котельной 12 МВТ</h4>
+              <p class="work__country-card-text">Завод «ВЕНТРАУФ» изготовил систему дымоудаления для газовой водогрейной котельной 12 МВТ</p>
+            </div>
+          </div>
+        </div>
+        <div class="work__country-marker work__country-marker--samara">
+          <img class="work__country-marker-img" src="img/map-marker.svg" alt="">
+          <div class="work__country-card">
+            <div class="work__country-card-photo">
+              <img class="work__country-card-img" src="img/card-1.jpg" alt="">
+            </div>
+            <div class="work__country-card-content">
+              <h4 class="work__country-card-title">Система дымоудаления для котельной 12 МВТ</h4>
+              <p class="work__country-card-text">Завод «ВЕНТРАУФ» изготовил систему дымоудаления для газовой водогрейной котельной 12 МВТ</p>
+            </div>
+          </div>
+        </div>
+        <div class="work__country-marker work__country-marker--taymurone">
+          <img class="work__country-marker-img" src="img/map-marker.svg" alt="">
+          <div class="work__country-card">
+            <div class="work__country-card-photo">
+              <img class="work__country-card-img" src="img/card-1.jpg" alt="">
+            </div>
+            <div class="work__country-card-content">
+              <h4 class="work__country-card-title">Система дымоудаления для котельной 12 МВТ</h4>
+              <p class="work__country-card-text">Завод «ВЕНТРАУФ» изготовил систему дымоудаления для газовой водогрейной котельной 12 МВТ</p>
+            </div>
+          </div>
+        </div>
+        <div class="work__country-marker work__country-marker--taymurtwo">
+          <img class="work__country-marker-img" src="img/map-marker.svg" alt="">
+          <div class="work__country-card">
+            <div class="work__country-card-photo">
+              <img class="work__country-card-img" src="img/card-1.jpg" alt="">
+            </div>
+            <div class="work__country-card-content">
+              <h4 class="work__country-card-title">Система дымоудаления для котельной 12 МВТ</h4>
+              <p class="work__country-card-text">Завод «ВЕНТРАУФ» изготовил систему дымоудаления для газовой водогрейной котельной 12 МВТ</p>
+            </div>
+          </div>
+        </div>
+        <div class="work__country-marker work__country-marker--yakutia">
+          <img class="work__country-marker-img" src="img/map-marker.svg" alt="">
+          <div class="work__country-card">
+            <div class="work__country-card-photo">
+              <img class="work__country-card-img" src="img/card-1.jpg" alt="">
+            </div>
+            <div class="work__country-card-content">
+              <h4 class="work__country-card-title">Система дымоудаления для котельной 12 МВТ</h4>
+              <p class="work__country-card-text">Завод «ВЕНТРАУФ» изготовил систему дымоудаления для газовой водогрейной котельной 12 МВТ</p>
+            </div>
+          </div>
+        </div>
+        <div class="work__country-marker work__country-marker--khabarovsk">
+          <img class="work__country-marker-img" src="img/map-marker.svg" alt="">
+          <div class="work__country-card">
+            <div class="work__country-card-photo">
+              <img class="work__country-card-img" src="img/card-1.jpg" alt="">
+            </div>
+            <div class="work__country-card-content">
+              <h4 class="work__country-card-title">Система дымоудаления для котельной 12 МВТ</h4>
+              <p class="work__country-card-text">Завод «ВЕНТРАУФ» изготовил систему дымоудаления для газовой водогрейной котельной 12 МВТ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="work__info">
+        <div class="work__info-inner">
+          <div class="work__info-item">
+            <div class="work__info-item-inner">
+              <div class="work__info-top">
+                <span class="work__info-count">20</span>+
+              </div>
+              <div class="work__info-bot">
+                <p class="work__info-text">
+                  Новых специалистов в нашей базе каждый месяц
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="work__info-item">
+            <div class="work__info-item-inner">
+              <div class="work__info-top">
+                <span class="work__info-count">5</span>+
+              </div>
+              <div class="work__info-bot">
+                <p class="work__info-text">
+                  Регионов где есть специалисты из нашей базы
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="work__info-item">
+            <div class="work__info-item-inner">
+              <div class="work__info-top">
+                <span class="work__info-count">100</span>+
+              </div>
+              <div class="work__info-bot">
+                <p class="work__info-text">
+                  Специалистов в нашей базе на данный момент
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="about" id="about">
+    <h3 class="about__title title">О нашей компании</h3>
+    <div class="container">
+      <div class="about__photo">
+        <img class="about__img" src="img/about-photo.jpg" alt="">
+      </div>
+      <div class="about__top-inner">
+        <div class="about__photo-item">
+          <div class="about__photo-icon">
+            <svg>
+              <use xlink:href="img/sprite.svg#about-1"></use>
+            </svg>
+          </div>
+          <p class="about__text">
+            Специалисты из разных отраслей сплочатся, чтобы развить ваш бизнес во всех сферах
+          </p>
+        </div>
+        <div class="about__photo-item">
+          <div class="about__photo-icon">
+            <svg>
+              <use xlink:href="img/sprite.svg#about-2"></use>
+            </svg>
+          </div>
+          <p class="about__text">
+            Соблюдаем дедлайны проекта, показываем промежуточные результаты, гарантируем выполнение задачи
+          </p>
+        </div>
+        <div class="about__photo-item">
+          <div class="about__photo-icon">
+            <svg>
+              <use xlink:href="img/sprite.svg#about-3"></use>
+            </svg>
+          </div>
+          <p class="about__text">
+            Наша команда ежегодно повышает квалификацию и посещает конференции международного уровня
+          </p>
+        </div>
+      </div>
+      <div class="about__bot-inner">
+        <div class="about__bot-content">
+          <ul class="about__bot-list">
+            <li class="about__bot-item">- проектирование заказа с учетом индивидуальных пожеланий заказчика;</li>
+            <li class="about__bot-item">- производство высококачественных дымоходов: промышленных и коаксиальных;</li>
+            <li class="about__bot-item">- доставка готовой продукции непосредственно до объекта;</li>
+            <li class="about__bot-item">- монтаж изделий собственного производства;</li>
+            <li class="about__bot-item">- гарантия на дымоходы и монтажные работы – 10 лет.</li>
+          </ul>
+        </div>
+        <div class="about__bot-btns">
+          <a class="about__bot-btn btn--blue" href="#">Подробнее</a>
+          <a class="about__bot-btn btn--white" href="#">Сотрудничать</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer" id="contacts">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__content">
+          <h3 class="footer__content-title title">Мы в соц. сетях</h3>
+          <p class="footer__content-text">Пишите в любое время суток, мы будем очень рады!</p>
+          <ul class="footer__content-list">
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                <div class="footer__item-icon">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#facebook"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                <div class="footer__item-icon">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#instagram"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                <div class="footer__item-icon">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#footer-phone"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                <div class="footer__item-icon">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#vk"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <p class="footer__content-text footer__content-text--small">Также можете написать на почту</p>
+          <a class="footer__content-mail" href="mailto:dum-off@yandex.ru">dum-off@yandex.ru</a>
+        </div>
+        <div class="footer__contact">
+          <h3 class="footer__contact-title title">Укажите когда вам перезвонить</h3>
+          <form class="footer__contact-form">
+            <div class="footer__form-inp-wrapper footer__form-inp-wrapper--user">
+              <input class="footer__inp" type="text" autocomplete="off" name="name">
+              <div class="footer__inp-info">
+                <div class="footer__inp-icon">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#user"></use>
+                  </svg>
+                </div>
+                <div class="footer__inp-placeholder">Ваше Имя</div>
+              </div>
+            </div>
+            <div class="footer__form-inp-wrapper footer__form-inp-wrapper--phone">
+              <input class="footer__inp" type="tel" autocomplete="off" name="phone">
+              <div class="footer__inp-info">
+                <div class="footer__inp-icon">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#form-phone"></use>
+                  </svg>
+                </div>
+                <div class="footer__inp-placeholder">Ваш телефон</div>
+              </div>
+            </div>
+            <div class="footer__form-inp-wrapper footer__form-inp-wrapper--date">
+              <input class="footer__inp" id="datepicker" type="text" autocomplete="off" name="datepicker">
+              <div class="footer__inp-info">
+                <div class="footer__inp-icon">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#datepicker"></use>
+                  </svg>
+                </div>
+                <div class="footer__inp-placeholder">Дата и время</div>
+              </div>
+            </div>
+            <div class="footer__form-btn-wrapper">
+              <button class="footer__form-btn btn--white" type="submit">Заказать</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="libs/libs.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="js/common.js"></script>
+</body>
+</html>
